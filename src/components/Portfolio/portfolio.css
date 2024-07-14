@@ -27,17 +27,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100vw;
     max-width: 65rem;
-
 }
 
 .worksImg {
     object-fit: cover;
     height: 20rem;
-    flex-wrap: wrap;
+    display: flex;
     margin: 0.5rem;
-    
+    transition: 0.5s;
+}
+
+.worksImg:hover {
+    transform: scale(1.4);
+    background: rgb(50, 50, 50);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.worksImg2 {
+    object-fit: cover;
+    height: 15rem;
+    display: flex;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.worksImg2:hover {
+    transform: scale(2);
+    background: rgb(50, 50, 50);
+    transition: 0.5s;
+    z-index: 2;
 }
 
 .workBtn {
