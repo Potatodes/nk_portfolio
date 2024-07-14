@@ -13,13 +13,14 @@
 }
 
 .worksTitle {
-    margin: 1rem 0;
+    margin: 2rem 0;
     font-size: 3rem;
 }
 
 .worksDesc {
     font-weight: 300;
     font-size: 1rem;
+    max-width: 45rem;
 }
 
 .worksImgs {
@@ -36,5 +37,28 @@
     height: 20rem;
     flex-wrap: wrap;
     margin: 0.5rem;
+    
+}
+
+.workBtn {
+    margin: 3rem 0;
+    margin-bottom: 10rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.workBtn:hover {
+    background: yellow;
+    transition: all 0.5 ease-in;
+}
+
+@media screen and (max-width:585px) {
+    .worksImg {
+        height: 48vw;
+    }
     
 }
