@@ -87,7 +87,7 @@
 }
 
 .link:hover {
-    transform:translateY()(1.2);
+    transform: scale(1.2);
 
 }
 

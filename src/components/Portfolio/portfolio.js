@@ -152,7 +152,7 @@ const Portfolio = () => {
       <div className="portfolioBars">
         <div className="portfolioBar">
           <div className="portfolioBarText">
-            <h3>Mapua Malayan Colleges Laguna: IoT Machine Problems</h3>
+            <h3>Mapúa Malayan Colleges Laguna: IoT Machine Problems</h3>
             <p>
               <div className="worksImgs">
                 <img src={GuessThePitch} alt="Works6" className="worksImg2" role="link"
