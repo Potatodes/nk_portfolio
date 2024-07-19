@@ -203,6 +203,7 @@ const Portfolio = () => {
         <img src={LegalpersAI} alt="Seminar2" className="worksImg" role="link"
           onClick={() => openInNewTab("https://drive.google.com/file/d/1JPYHedJAKOLDX1z0NKFvaOFq8ANvC9F5/view?usp=sharing")} />
       </div>
+      <br/><br/><br/>
     </section>
   );
 };
