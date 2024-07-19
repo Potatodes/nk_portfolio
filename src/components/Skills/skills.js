@@ -1,6 +1,6 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
+import layersDesign from "../../assets/ui-design.png";
 import WebDesign from "../../assets/website-design.png";
 import Follower from "../../assets/follower.png";
 
@@ -11,19 +11,19 @@ const Skills = () => {
       <span className="skillDesc">
         I am experienced and passionate in creating visually appealing and
         user-friendly websites. I have a strong understanding of design and a
-        keen eye for detail. I am knowledgeable in HTML, CSS and JavaScript.
+        keen eye for detail, which of all, I have learned while studying and
+        gained on my On-the-Job Training as a developer.
       </span>
 
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={layersDesign} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>UI/UX Design</h2>
+            <h2>Various Language & Framework Experience</h2>
             <p>
-              As an aspiring web designer, I have a keen eye for aesthetics and
-              a deep understanding of user-centered design principles, enabling
-              me to create visually appealing and intuitive interfaces that
-              enhance user experience.
+              As an aspiring developer, I have experienced and worked with various
+              languages and frameworks, such as: PHP, HTML, CSS, Python, JavaScript, C#, C++,
+              CodeIgniter4 and Create React App.
             </p>
           </div>
         </div>
@@ -32,9 +32,9 @@ const Skills = () => {
         <div className="skillBar">
           <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>Web Disign</h2>
+            <h2>Web Design</h2>
             <p>
-              As an aspiring web designer, I excel at creating visually
+              As an aspiring web designer, I put effort into creating visually
               appealing, responsive, and user-friendly websites by combining my
               knowledge of modern design principles, HTML, CSS, and JavaScript.
             </p>
@@ -49,7 +49,7 @@ const Skills = () => {
             <p>
               If guided, I'm always eager to listen and learn, committed to
               following directions and contributing effectively to the team's
-              ultimate success.
+              ultimate success!
             </p>
           </div>
         </div>

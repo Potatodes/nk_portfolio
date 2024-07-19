@@ -1,7 +1,12 @@
 .footer {
     width: 100vw;
     height: 4rem;
+    overflow: hidden;
+    margin: 0 auto;
     background-color: rgb(40,40,40);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;

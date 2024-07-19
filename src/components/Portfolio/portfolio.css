@@ -1,15 +1,14 @@
 #portfolio {
-    margin: 0 auto;
+    overflow: hidden;
     min-height: calc(100vh - 4rem);
-    width: 100vh;
-    max-width: 60vh;
+    width: 100vw;
+    max-width: 90rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;
-
+    margin: 0 auto;
 }
 
 .worksTitle {
@@ -23,13 +22,36 @@
     max-width: 45rem;
 }
 
+.portfolioBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 65rem;
+    text-align: left;
+}
+
+.portfolioBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(50, 50, 50);
+}
+
+.portfolioBarText>p {
+    font-size: 0.9;
+    font-weight: 200;
+}
+
 .worksImgs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    max-width: 65rem;
+    max-width: 60rem;
 }
 
 .worksImg {
@@ -43,7 +65,7 @@
 .worksImg:hover {
     transform: scale(1.4);
     background: rgb(50, 50, 50);
-    transition: 0.5s;
+    transition: 0.5s 0.3s;
     z-index: 2;
 }
 
@@ -58,31 +80,108 @@
 
 
 .worksImg2:hover {
-    transform: scale(2);
+    transform: scale(1.7);
     background: rgb(50, 50, 50);
-    transition: 0.5s;
+    transition: 0.5s 0.3s;
     z-index: 2;
 }
 
 .workBtn {
     margin: 3rem 0;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     padding: 0.5rem 2.5rem;
     border: none;
     background: white;
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5 ease-in;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .workBtn:hover {
+    transition: all 0.2s ease-in;
     background: yellow;
-    transition: all 0.5 ease-in;
+}
+
+/* Summary buttons */
+summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+summary span {
+    margin: 0.2rem 0;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    background: white;
+    color: rgb(30, 30,30);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 2.5rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+summary span:hover {
+    transition: all 0.2s ease-in;
+    background: yellow;
+}
+
+@keyframes open {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
+  
+  /* closing animation */
+  @keyframes close {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+  details[open] summary~* {
+    animation: open 1s
+  }
+  
+  /* closing class */
+  details.closing summary~* {
+    animation: close 1s
+  }
+
+#on,
+details[open] #off {
+    display: none;
+}
+
+details[open] #on {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    background: rgb(30, 30,30);
+    color: white;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+details[open] #on:hover {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    background: white;
+    color: rgb(30, 30,30);
 }
 
 @media screen and (max-width:585px) {
     .worksImg {
         height: 48vw;
     }
-    
+
 }

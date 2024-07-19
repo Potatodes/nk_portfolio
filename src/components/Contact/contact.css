@@ -78,12 +78,17 @@
 
 .submitBtn:hover {
     background: yellow;
-    transition: all 0.5 ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .links {
     display: flex;
     flex-wrap: wrap;
+}
+
+.link:hover {
+    transform:translateY()(1.2);
+
 }
 
 .link {
