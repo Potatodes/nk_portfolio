@@ -84,9 +84,18 @@ const Portfolio = () => {
               <details>
                 <summary><span id="off">More Details</span><span id="on">Close</span></summary>
                 <p>
-                  In this project, we have developed a Voice-Assistive Interactive Kiosk prototype that accesses a local
+                  In this project, we have developed a python based Voice-Assistive Interactive Kiosk prototype that accesses a local
                   database with a web based entry creator to answer school related questions and a pre-trained language model
-                  for other interactive actions.
+                  for other interactive actions. The web application is able to login employees that are created by an admin and
+                  only a select few are able to access this application, when the user proceeds to the landing page, they are
+                  greeted with existing entries that are sorted from newest to oldest, images can be displayed but if the entry
+                  does not have an image, it will use the placeholder image, this results to not displaying any image on the Kiosk
+                  application. Another function of the web application is that it is able to use an advance search query where the
+                  user is able to input queries of context specific words and also select from a dropdown selection of which department
+                  they wish to view, resulting in a query with a specific category. These entries are then used by out voice activated
+                  kiosk and when school related questions are asked, a context specific query is made via the users' speech-to-text
+                  input, if otherwise, a non school related question, we would instead be using a google based voice assistant, Gemini
+                  to interact with them.
                   <br /><br />
                   For this project, I have assisted in creating our initial interface for Whizzy
                   and integrated with our first tests with the language model. Also, I created the
@@ -203,7 +212,7 @@ const Portfolio = () => {
         <img src={LegalpersAI} alt="Seminar2" className="worksImg" role="link"
           onClick={() => openInNewTab("https://drive.google.com/file/d/1JPYHedJAKOLDX1z0NKFvaOFq8ANvC9F5/view?usp=sharing")} />
       </div>
-      <br/><br/><br/>
+      <br /><br /><br />
     </section>
   );
 };
