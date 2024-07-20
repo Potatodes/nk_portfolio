@@ -2,15 +2,9 @@ import React, { useRef } from 'react';
 import "./contact.css";
 import Bplo from "../../assets/BPLO_Logo.png";
 import binan from "../../assets/BinanCityLogo.png";
-import facebookIcon from "../../assets/facebook-icon.png";
-import linkedinIcon from "../../assets/linkedin.png";
-import githubIcon from "../../assets/githublogo.png"
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-    const openInNewTab = (url) => {
-        window.open(url, "_blank", "noreferrer");
-    };
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -73,14 +67,6 @@ export const Contact = () => {
                     <button type="submit" value="Send" className="submitBtn">
                         Submit
                     </button>
-                    <div className="links">
-                        <img src={facebookIcon} alt="Facebook" className="link" role="link"
-                            onClick={() => openInNewTab("https://www.facebook.com/lieNKeinsley/")} />
-                        <img src={linkedinIcon} alt="Linkedin" className="link" role="link"
-                            onClick={() => openInNewTab("https://www.linkedin.com/in/neil-keinsley-guingcangco-389281308/")} />
-                        <img src={githubIcon} alt="Linkedin" className="link" role="link"
-                            onClick={() => openInNewTab("https://github.com/Potatodes")} />
-                    </div>
                 </form>
             </div>
         </section>

@@ -43,6 +43,26 @@
 .portfolioBarText>p {
     font-size: 0.9;
     font-weight: 200;
+    text-align: justify;
+}
+
+.paras {
+    text-indent: 3.5rem;
+}
+
+.usedLangs {
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.usedLangs svg {
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.2rem;
 }
 
 .worksImgs {
@@ -134,6 +154,11 @@ summary span {
 summary span:hover {
     transition: all 0.2s ease-in;
     background: yellow;
+}
+
+figure {
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 @keyframes open {
