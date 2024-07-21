@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer className='footer'>
-        Made by: 2024 Neil Keinsley B. Guingcangco.
+        Made by: 2024 Neil Keinsley B. Guingcangco. With ReactJS
     </footer>
   )
 }

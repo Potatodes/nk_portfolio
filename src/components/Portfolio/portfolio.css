@@ -44,6 +44,11 @@
     font-size: 0.9;
     font-weight: 200;
     text-align: justify;
+    align-self: flex-start;
+}
+
+.portfolio h2 {
+    text-align: center;
 }
 
 .paras {
